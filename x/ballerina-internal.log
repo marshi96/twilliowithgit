@@ -1,0 +1,78 @@
+[2018-08-16 11:52:11,906] ERROR {org.wso2.transport.http.netty.listener.WebSocketServerHandshakeHandler} - Error during WebSocket server handshake 
+java.io.IOException: An established connection was aborted by the software in your host machine
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1108)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:345)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:126)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+ 
+[2018-08-16 13:42:49,839] ERROR {org.ballerinalang.net.http.HttpConnectorPortBindingListener} - Error in http endpoint 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1283)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:989)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:364)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+ 
+[2018-08-16 18:52:06,288] ERROR {org.ballerinalang.net.http.HttpConnectorPortBindingListener} - Error in http endpoint 
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:128)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1283)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:989)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:364)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:463)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:886)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Unknown Source)
+ 
+[2018-08-17 12:56:32,704] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 13:08:58,985] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 13:11:07,873] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 13:14:48,791] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 14:50:36,056] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 14:52:01,921] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 15:58:03,849] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 15:59:10,570] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:04:52,745] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:07:56,870] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:08:18,282] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:08:25,362] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:08:31,040] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:14:44,598] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:16:43,611] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:19:04,359] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
+[2018-08-17 16:21:56,508] ERROR {org.ballerinalang.net.http.HttpUtil} - call failed  
